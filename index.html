@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dog Photo App</title>
+</head>
+<body>
+    <p class="error" style="width: 100%; background-color: red; text-align: center; display: none;">Įvyko klaida</p>
+    <div class="container">
+        <div class="getRandomContainer">
+            <div class="getrandom">
+                <input type="text" placeholder="Enter dog breed" id="breedInput">
+                <button class="getPhotoBtn">Get your dog photo</button>
+            </div>
+            <div class="dog_photos"></div>
+        </div>
+
+        <div class="listContainer">
+            <div class="get">
+                <p>Get all dogs breed</p>
+                <button class="getDogBtn">Get all breed</button>
+            </div>
+            <ul id="dogList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
