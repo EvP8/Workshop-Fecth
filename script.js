@@ -2,6 +2,7 @@ const inputDOM = document.querySelector('#breedInput');
 const photoBtnDOM = document.querySelector('.getPhotoBtn');
 const dogListDOM = document.querySelector('#dogList');
 const errorDOM = document.querySelector('.error');
+const dogBtnDOM = document.querySelector('.getDogBtn');
 
 photoBtnDOM.addEventListener('click', getDogPhoto);
 
@@ -46,10 +47,8 @@ function showError(message) {
 
     setTimeout(() => {
         errorDOM.style.display = 'none';
-    }, 2000);
+    }, 3000);
 }
-
-const dogBtnDOM = document.querySelector('.getDogBtn');
 
 dogBtnDOM.addEventListener('click', getDogBreeds);
 
